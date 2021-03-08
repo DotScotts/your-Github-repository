@@ -12,9 +12,9 @@ import java.util.Scanner;
  * status of User-Rejected,Pending,Processing and Approved.
  * if the input is not given in String, 
  * program will accept and produce wrong results. 
- * Use enumerators to avoid input errors
- * and print the status details. 
- * @author srinivsi date:June 24th
+ * Change the code to avoid String input and input errors 
+ * then print the status details. 
+ * @author srinivsi date:March 8th
  */
 public class Status {
 
