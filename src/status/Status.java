@@ -14,6 +14,7 @@ import java.util.Scanner;
  * program will accept and produce wrong results. 
  * Change the code to avoid String input and input errors 
  * then print the status details. 
+ * use enums
  * @author srinivsi date:March 8th
  */
 public class Status {
