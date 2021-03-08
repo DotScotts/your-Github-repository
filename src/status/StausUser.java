@@ -6,7 +6,7 @@
 package status;
 
 /**
- * june 24th
+ * March 8th
  * @author srinivsi
  */
 public class StausUser 
