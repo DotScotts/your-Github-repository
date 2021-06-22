@@ -12,7 +12,7 @@ import java.util.Scanner;
  * status of User-Rejected,Pending,Processing and Approved.
  * if the input is not given in String, 
  * program will accept and produce wrong results. 
- * use enums to change the code which avoids String input and input errors 
+ * change the code to use enums which avoids String input 
  * then print the status details. 
  * @author srinivsi date:June 22
  */
