@@ -5,29 +5,35 @@
  */
 package status;
 
-import java.util.Scanner;
-
-/** This class takes String input from user 
- * and calls method statusDetail to print the 
- * status of User-Rejected,Pending,Processing and Approved.
- * if the input is not given in String, 
- * program will accept and produce wrong results. 
- * change the code to use enums which avoids String input 
- * then print the status details. 
- * @author srinivsi 
+/**
+ * class used by status app
+ * MidTerm-Exam
+ * @author srinivsi
+ * @author Scott Sharrard
  */
-public class Status {
 
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args)
-    {
-    Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
-    StausUser t= new StausUser();
-    t.statusDetail(code); 
+public class Status {
+    
+    // Added enums to simpilfy input & create data type
+    
+    public enum UserStatus {
+        REJECTED("REJECTED"),
+        PENDING("PENDING"),
+        PROCESSING("PROCESSING"),
+        APPROVED("APPROVED");
+        
+        private final String status;
+        
+        private UserStatus(String status) {
+            this.status = status;
+        }
+        
+        public String getStatus() {
+            return status;
+        }
     }
     
+    public void printUserStatus(UserStatus status) {
+        System.out.println(status.getStatus());
+    }
 }
